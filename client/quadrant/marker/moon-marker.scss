@@ -1,0 +1,21 @@
+.moon-marker{
+	&_bg{
+		.dark &{
+			fill: lightBlue;
+		}
+		.light &{
+			//fill: #111;
+			fill: lightBlue;
+		}
+	}
+	&_half {
+		.dark &{
+			fill: #111;
+			stroke: #111;
+		} 
+		.light &{
+			fill: white;
+			stroke: white;
+		}
+	}
+}
