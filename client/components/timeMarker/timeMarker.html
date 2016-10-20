@@ -1,0 +1,50 @@
+<template name="timeMarker">
+	<g 	id="time-marker" 
+		transform="translate({{timeMarker.minsX}},{{timeMarker.minsY}})"
+	>
+		<circle id="empty-marker"
+			class="empty-marker_bg" 
+			cx="0" 
+			cy="0"
+			fill="black"
+			r="{{timeMarker.r}}">
+		</circle>
+
+		<g id="moon-marker" class="moon-marker {{timeMarker.moon.type}}" style="opacity: {{timeMarker.moon.opacity}}">
+			<circle class="moon-marker_bg" 
+					cx="0" 
+					cy="0" 
+					r="{{timeMarker.r}}"
+			/>
+
+			<path  class="moon-marker_half left" 
+					d="{{timeMarker.moon.leftD}}" 
+			/>
+			<path 	class="moon-marker_half right" 
+					d="{{timeMarker.moon.rightD}}" 
+			/>
+			<path  class="moon-marker_half masked left" 
+					d="{{timeMarker.moon.leftD}}" 
+			/>
+			<path 	class="moon-marker_half masked right" 
+					d="{{timeMarker.moon.rightD}}" 
+			/>
+		</g>
+
+		<circle id="sun-marker"
+			style="opacity: {{timeMarker.sun.opacity}}"
+			class="sun-marker_bg" 
+			cx="0" 
+			cy="0"
+			r="{{timeMarker.r}}">
+		</circle>
+	</g>
+	<text 	dy="3.5" 
+			class="time-marker_mins" 
+			fill="{{timeMarker.minsFill}}"
+			x="{{timeMarker.minsX}}" 
+			y="{{timeMarker.minsY}}"
+	>
+		{{timeMarker.mins}}
+	</text>
+</template>

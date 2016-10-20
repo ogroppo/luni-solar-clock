@@ -1,0 +1,53 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+svg{
+	width: 100%;
+	height: 100vh;
+	background-image: url(andromeda.jpg);
+	background-size: cover;
+}
+
+.clock-page{
+	&_header{
+		box-sizing: border-box;
+		position: absolute;
+		text-align: center;
+		color: white;
+		padding: .5em 1em;
+		width: 100%;
+		top: 1vw;
+	}
+	&_footer{
+		box-sizing: border-box;
+		position: absolute;
+		text-align: center;
+		color: white;
+		padding: .5em;
+		width: 100%;
+		bottom: 5%;
+	}
+	&_title{
+		margin-bottom: 0;
+	}
+	&_subtitle{
+		span{
+			font-style: italic;
+		}
+	}
+}
+
+@media screen and ( max-width: 600px ){
+    .clock-page_header{
+    	font-size: .7em;
+    	padding-top: 0;
+    }
+    .clock-page_title{
+    	margin-top: 1%;
+    }
+    .clock-page_footer{
+    	bottom: 1%;
+    }
+}

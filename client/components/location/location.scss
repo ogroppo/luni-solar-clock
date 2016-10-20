@@ -1,0 +1,14 @@
+.location{
+	&_note{
+		text-anchor: middle;
+		fill: white;
+		font-size: 12px;
+		opacity: 0.5;
+	}
+	&_place{
+		text-anchor: middle;
+		fill: white;
+		font-size: 12px;
+		opacity: .8;
+	}
+}

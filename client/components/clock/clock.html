@@ -1,0 +1,27 @@
+<template name="clock">
+	<svg id="clock-svg">
+		<defs>
+	    <filter id="moon-img" x="0%" y="0%" width="100%" height="100%">
+	        <feImage xlink:href="moon.png"/>
+	    </filter>
+	    <filter id="sun-img" x="-10%" y="-10%" width="120%" height="120%">
+	        <feImage xlink:href="sun-cropped.png"/>
+	    </filter>
+	    <filter id="position" x="0%" y="0%" width="100%" height="100%">
+	        <feImage xlink:href="position.png"/>
+	    </filter>
+	    <clipPath id="clipCircle">
+			<circle r="51" cx="0" cy="0"/>
+		</clipPath>
+	  	</defs>
+		<g 	id="clock-center" 
+			transform="translate({{clock.centerX}},{{clock.centerY}})">
+
+			{{>moonLight}}
+
+			{{>sunLight}}
+			
+			{{>quadrant}}
+		</g>
+	</svg>
+</template>
