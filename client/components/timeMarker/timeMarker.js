@@ -87,7 +87,6 @@ setTimeMarker = function(){
 			if(opacity < 0.3)
 				opacity = 0.3;
 				 
-			console.log(opacity);
 			timeMarker.sun.opacity = opacity;
 		}else{
 			Session.set('dayLight', false);

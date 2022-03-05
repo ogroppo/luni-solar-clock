@@ -3,4 +3,27 @@
 		text-anchor: middle;
 		font-size: 10px;
 	}
+	&_sun{
+		&-bg{
+			fill: orange;
+		}
+	}
+	&_moon{
+		&-bg{
+			.dark &{
+				fill: white;
+			}
+			.light &{
+				fill: #111;
+			}
+		}
+		&-half{
+			.dark &{
+				fill: #111;
+			} 
+			.light &{
+				fill: white;
+			}
+		}
+	}
 }

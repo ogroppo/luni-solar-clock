@@ -18,7 +18,7 @@ svg{
 		color: white;
 		padding: .5em 1em;
 		width: 100%;
-		top: 1vw;
+		top: 1vh;
 	}
 	&_footer{
 		box-sizing: border-box;
@@ -43,9 +43,6 @@ svg{
     .clock-page_header{
     	font-size: .7em;
     	padding-top: 0;
-    }
-    .clock-page_title{
-    	margin-top: 1%;
     }
     .clock-page_footer{
     	bottom: 1%;

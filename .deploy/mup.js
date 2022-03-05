@@ -10,9 +10,9 @@ module.exports = {
   },
 
   meteor: {
-    name: 'nowledge',
+    name: 'clock',
     path: '../',
-    //port: 88
+    port: 81,
     servers: {
       one: {}
     },
@@ -21,10 +21,13 @@ module.exports = {
       debug: true
     },
     env: {
-      MONGO_URL: 'mongodb://localhost/nowledge'
+      MONGO_URL: 'mongodb://localhost/clock',
+      PORT: 81
     },
-
-    dockerImage: 'abernix/meteord:base',
+    docker: {
+      //image: 'kadirahq/meteord' // (optional)
+      image: 'abernix/meteord:base' // use this image if using Meteor 1.4+
+    },
     deployCheckWaitTime: 60
   },
 
@@ -32,8 +35,8 @@ module.exports = {
     oplog: true,
     port: 27017,
     servers: {
-      one: {},
-    },
-  },
+      one: {}
+    }
+  }
 
 };

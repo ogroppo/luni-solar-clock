@@ -2,4 +2,20 @@
 	&_bg{
 		fill: black;
 	}
+	&_marker{		
+		&-tick{
+			stroke-width: 1;
+			stroke: lightGrey;
+			display: none;
+		}
+		&-digit{
+			text-anchor: middle;
+			font-size: 10px;
+			stroke-width: 0;
+			opacity: .5;
+			.current &{
+				opacity: 1;
+			}
+		}
+	}
 }

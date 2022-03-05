@@ -57,27 +57,6 @@ setHourMarkers = function(){
 			marker.hourFill = 'white';
 		}
 
-		// if(i === now.hours() + 1){
-		// 	var relExcursion = now.minutes() * markerExcursionMins;
-		// 	if(relExcursion < (markerExcursion * 3 / 2) )
-		// 		relExcursion *= 1.2;
-		// 	else
-		// 		relExcursion *= 0.5;
-			
-		// 	var nextHourExcursion = hourMarkerR - relExcursion;			
-		// 	marker.hourX = degToX(marker.deg, {offset: 90, r: nextHourExcursion});
-		// 	marker.hourY = degToY(marker.deg, {offset: 90, r: nextHourExcursion});
-		// }
-
-		// if(i === 12){
-		// 	marker.nameY = -60;
-		// 	marker.name = 'noon';
-		// }
-		// if(i === 24){
-		// 	marker.nameY = 60;
-		// 	marker.name = 'night';
-		// }
-
 		_markers.push(marker);
 	};
 
